@@ -4,7 +4,7 @@
 Summary:	Pulls APC data via APC UPS Daemon (apcupsd) for non-SNMP hardware
 Name:		cacti-template-%{template}
 Version:	1.1
-Release:	1
+Release:	2
 License:	GPL v2
 Group:		Applications/WWW
 Source0:	http://docs.cacti.net/_media/usertemplate:data:apc:apcupsd:apcupsd_%{version}.zip
@@ -35,7 +35,7 @@ Pulls APC data via APC UPS Daemon (apcupsd) for non-SNMP hardware.
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT{%{resourcedir},%{scriptsdir}}
-cp -a *.xml $RPM_BUILD_ROOT%{resourcedir}
+cp -p *.xml $RPM_BUILD_ROOT%{resourcedir}
 install -p *.php $RPM_BUILD_ROOT%{scriptsdir}
 
 %post
