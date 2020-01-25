@@ -1,6 +1,5 @@
 %define		template apcupsd
 %define		php_min_version 5.0.0
-%include	/usr/lib/rpm/macros.php
 Summary:	Pulls APC data via APC UPS Daemon (apcupsd) for non-SNMP hardware
 Name:		cacti-template-%{template}
 Version:	1.1
