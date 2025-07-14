@@ -30,7 +30,7 @@ Pulls APC data via APC UPS Daemon (apcupsd) for non-SNMP hardware.
 %prep
 %setup -qc
 %undos -f php
-%patch0 -p1
+%patch -P0 -p1
 
 %install
 rm -rf $RPM_BUILD_ROOT
